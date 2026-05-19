@@ -92,15 +92,47 @@
 
 *Filled by roadmapper — maps each REQ-ID to the phase that delivers it.*
 
-| REQ-ID | Phase |
-|--------|-------|
-| AUTH-01..10 | — |
-| PAT-01..06 | — |
-| DOC-01..07 | — |
-| RAG-01..06 | — |
-| CHAT-01..04 | — |
-| INFRA-01..05 | — |
+| REQ-ID | Phase | Status |
+|--------|-------|--------|
+| INFRA-01 | Phase 1 | Pending |
+| INFRA-02 | Phase 1 | Pending |
+| AUTH-01 | Phase 2 | Pending |
+| AUTH-02 | Phase 2 | Pending |
+| AUTH-03 | Phase 2 | Pending |
+| AUTH-04 | Phase 2 | Pending |
+| AUTH-05 | Phase 2 | Pending |
+| AUTH-06 | Phase 2 | Pending |
+| AUTH-07 | Phase 2 | Pending |
+| AUTH-08 | Phase 2 | Pending |
+| AUTH-09 | Phase 2 | Pending |
+| AUTH-10 | Phase 2 | Pending |
+| PAT-01 | Phase 3 | Pending |
+| PAT-02 | Phase 3 | Pending |
+| PAT-03 | Phase 3 | Pending |
+| PAT-04 | Phase 3 | Pending |
+| PAT-05 | Phase 3 | Pending |
+| PAT-06 | Phase 3 | Pending |
+| DOC-01 | Phase 4 | Pending |
+| DOC-02 | Phase 4 | Pending |
+| DOC-03 | Phase 4 | Pending |
+| DOC-04 | Phase 4 | Pending |
+| DOC-05 | Phase 4 | Pending |
+| DOC-06 | Phase 4 | Pending |
+| DOC-07 | Phase 4 | Pending |
+| RAG-01 | Phase 5 | Pending |
+| RAG-02 | Phase 5 | Pending |
+| RAG-03 | Phase 5 | Pending |
+| RAG-04 | Phase 5 | Pending |
+| RAG-05 | Phase 5 | Pending |
+| RAG-06 | Phase 5 | Pending |
+| CHAT-01 | Phase 6 | Pending |
+| CHAT-02 | Phase 6 | Pending |
+| CHAT-03 | Phase 6 | Pending |
+| CHAT-04 | Phase 6 | Pending |
+| INFRA-03 | Phase 7 | Pending |
+| INFRA-04 | Phase 7 | Pending |
+| INFRA-05 | Phase 7 | Pending |
 
 ---
 
-*Last updated: 2026-05-19 — Milestone v1.0 requirements defined*
+*Last updated: 2026-05-19 — Traceability filled by roadmapper*
