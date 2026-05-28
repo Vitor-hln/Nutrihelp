@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Redis is reachable on port 6379 and Celery worker connects successfully (visible in worker logs)
   5. Stopping and restarting the stack preserves all database data (volumes persist)
 **Plans**: 2 plans
-  - [ ] 01-01-PLAN.md — Django scaffold, dependencies, and environment config
+  - [x] 01-01-PLAN.md — Django scaffold, dependencies, and environment config
   - [ ] 01-02-PLAN.md — Docker orchestration, stack bring-up, and verification
 
 ### Phase 2: Auth & LGPD Baseline
