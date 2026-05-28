@@ -1,2 +1,33 @@
 # Nutrihelp
 guia_implementacao.md
+
+# Secrets — nunca commitar (D-09)
+dotenv_files/.env
+
+# Static files coletados
+nutrihelp_app/staticfiles/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
