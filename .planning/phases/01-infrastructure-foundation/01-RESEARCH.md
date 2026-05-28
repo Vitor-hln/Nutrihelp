@@ -731,16 +731,19 @@ print("Redis: OK")
    - O que sabemos: Docker Hub mostra `1.5.10.dev56` como latest (build dev)
    - O que não está claro: qual é o último tag de release semântico estável do ChromaDB
    - Recomendação: verificar `https://github.com/chroma-core/chroma/releases` antes de fixar o tag no docker-compose
+   - **RESOLVED:** fixar tag semântico estável `chromadb/chroma:0.6.3` no docker-compose; nunca `:latest` (decidido em 01-02-PLAN Task 2 / Pitfall 6). Se 0.6.3 não existir no registry, usar o tag estável mais próximo verificado nos releases.
 
 2. **pytesseract sem binário Tesseract**
    - O que sabemos: `pytesseract` é uma wrapper Python para o binário `tesseract-ocr`
    - O que não está claro: se `import pytesseract` falha ou apenas emite warning quando o binário está ausente
    - Recomendação: testar no Dockerfile com `python -c "import pytesseract"` após o build; se falhar, adicionar `tesseract-ocr` ao `apk add` ou remover `pytesseract` do `pyproject.toml` e deixar para v1.x
+   - **RESOLVED:** `import pytesseract` NÃO requer o binário (a wrapper só falha em runtime ao chamar `image_to_string`). Binário tesseract fica fora do Dockerfile na Phase 1 (OCR fora de escopo). Verificação adicionada ao checkpoint do 01-02-PLAN (Task 3, passo 5): `docker exec nutrihelp_django uv run python -c "import pytesseract"`.
 
 3. **Ollama GPU pass-through**
    - O que sabemos: CLAUDE.md menciona RTX 5070 12GB; o modelo `llama3.1:8b-instruct-q4_K_M` roda bem em GPU
    - O que não está claro: se o compose deve incluir `deploy.resources.reservations.devices` para NVIDIA GPU
    - Recomendação: adicionar o bloco de GPU ao serviço `nutrihelp_ollama` se a GPU estiver disponível; tornar opcional via `.env` ou comentário no compose
+   - **RESOLVED:** bloco GPU NVIDIA permanece OPCIONAL e comentado no docker-compose (01-02-PLAN Task 2); CPU fallback é aceitável para a verificação de infra da Phase 1. Habilitar o bloco fica a critério do executor se a RTX 5070 estiver disponível.
 
 ---
 

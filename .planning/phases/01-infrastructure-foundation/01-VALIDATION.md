@@ -3,7 +3,7 @@ phase: 1
 slug: infrastructure-foundation
 status: draft
 nyquist_compliant: false
-wave_0_complete: false
+wave_0_complete: true
 created: 2026-05-28
 ---
 
@@ -51,8 +51,10 @@ created: 2026-05-28
 
 ## Wave 0 Requirements
 
-- [ ] `nutrihelp_app/control/tests.py` — `SimpleTestCase` que verifica `SECRET_KEY` presente e `DATABASES` configurado
-- [ ] Smoke script `scripts/smoke_test.sh` — verifica todos os 5 critérios de sucesso via shell/curl
+- [x] `nutrihelp_app/control/tests.py` — `SimpleTestCase` que verifica `SECRET_KEY` presente e `DATABASES` configurado (criado em **01-01-PLAN Task 4**)
+- [x] Smoke script `scripts/smoke_test.sh` — verifica todos os 5 critérios de sucesso via shell/curl (criado em **01-01-PLAN Task 4**)
+
+*Estes artefatos agora têm tarefa de criação correspondente (01-01-PLAN Task 4), que também marca `wave_0_complete: true` ao concluir. Resolve o gap apontado pelo checker (W-2).*
 
 *Nota: Não há testes Django formais de aplicação nesta fase (nenhum app instalado ainda). Smoke tests são verificações de infra via shell/curl.*
 
