@@ -32,7 +32,9 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. PostgreSQL is reachable on port 3601 and the `vector` extension is enabled (verified via `\dx`)
   4. Redis is reachable on port 6379 and Celery worker connects successfully (visible in worker logs)
   5. Stopping and restarting the stack preserves all database data (volumes persist)
-**Plans**: TBD
+**Plans**: 2 plans
+  - [ ] 01-01-PLAN.md — Django scaffold, dependencies, and environment config
+  - [ ] 01-02-PLAN.md — Docker orchestration, stack bring-up, and verification
 
 ### Phase 2: Auth & LGPD Baseline
 **Goal**: Nutritionists and patients can authenticate via JWT, all LGPD safeguards are active from day one
@@ -115,7 +117,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Infrastructure Foundation | 0/TBD | Not started | - |
+| 1. Infrastructure Foundation | 0/2 | Not started | - |
 | 2. Auth & LGPD Baseline | 0/TBD | Not started | - |
 | 3. Patient Management | 0/TBD | Not started | - |
 | 4. Document Pipeline | 0/TBD | Not started | - |
